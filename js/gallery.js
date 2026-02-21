@@ -64,12 +64,9 @@ const images = [
   },
 ];
 
-const gallery = document.querySelector('.gallery');
-
-
 function itemTemplate(item) {
   return `      <li class="gallery-item">
-  <a class="gallery-link" href=";${item.original}">
+  <a class="gallery-link" href="${item.original}">
     <img
       class="gallery-image"
       src="${item.preview}"
